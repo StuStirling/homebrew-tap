@@ -5,21 +5,21 @@
 class Lnr < Formula
   desc "A read-only CLI for Linear"
   homepage "https://github.com/StuStirling/lnr"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/StuStirling/lnr/releases/download/v0.1.0/lnr_0.1.0_darwin_amd64.tar.gz"
-      sha256 "38ad63f63d9b58d4b12004447f02b50408bd6d18a49b9959d8232951afdad41f"
+      url "https://github.com/StuStirling/lnr/releases/download/v0.2.0/lnr_0.2.0_darwin_amd64.tar.gz"
+      sha256 "35ab707c82151c81c94dbea6db1785ff89a52ce9a45fd45d92901caf5db0605b"
 
       def install
         bin.install "lnr"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/StuStirling/lnr/releases/download/v0.1.0/lnr_0.1.0_darwin_arm64.tar.gz"
-      sha256 "f8a53cec907e530ad27919fd6cacb235b14dfec1893a7ccd356c761dcb5f20ee"
+      url "https://github.com/StuStirling/lnr/releases/download/v0.2.0/lnr_0.2.0_darwin_arm64.tar.gz"
+      sha256 "f332f7eb2990be5ee5583adf3179277fef0ca28b934b1084cf347bdbb47879b5"
 
       def install
         bin.install "lnr"
@@ -29,15 +29,15 @@ class Lnr < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/StuStirling/lnr/releases/download/v0.1.0/lnr_0.1.0_linux_amd64.tar.gz"
-      sha256 "f820cef03b0d3eadf3648dfcadfb244670ecc34e3988f869dc81915920ccd906"
+      url "https://github.com/StuStirling/lnr/releases/download/v0.2.0/lnr_0.2.0_linux_amd64.tar.gz"
+      sha256 "3bbc91485ad88d33c3c79e0625de676d3f203d0d47bb03f632515c60c7dc418f"
       def install
         bin.install "lnr"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/StuStirling/lnr/releases/download/v0.1.0/lnr_0.1.0_linux_arm64.tar.gz"
-      sha256 "93b63c981872c6e46239ca195e92f51d250a511f6310fb7209efbdb5544ebd26"
+      url "https://github.com/StuStirling/lnr/releases/download/v0.2.0/lnr_0.2.0_linux_arm64.tar.gz"
+      sha256 "4fbb51d2725895bd70a1b00a6a0ff94c3900a5045460196b8b52c0488c1f9e47"
       def install
         bin.install "lnr"
       end
